@@ -1,0 +1,21 @@
+Feb 1, 2021 (0.0.0d):
+Corrupted units deleted, instead of it the extra challenge means enemy units get random buffs for hp and damage (and their level increases if the buff is strong).
+
+Jan 30, 2021 (0.0.0c):
+A bug with commanders not working fixed (update_stats.lua fix)
+New units
+Choosing of 'Extra Challenge' in the first scenario instead of Custom Options
+Fixing bugs with corruption
+Items dropped on the last turn of a scenario will be autopicked
+
+Jan 17, 2021 (0.0.0b):
+LotI help menu item hidden
+Own global events macro without unneccesary things from main LotI
+Leaders of all enemy sides have 0 mp and LotI titles
+Corrupted enemies (extra challenge) added
+
+Dec 8, 2020 (0.0.0a):
+The first scenario shows warning messages
+
+Dec 6, 2020 (0.0.0):
+The add-on uploaded!

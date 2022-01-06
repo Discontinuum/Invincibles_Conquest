@@ -1,0 +1,8 @@
+Armageddon Drake: mainline 1.14
+Doom Bat: Reign of the Lords era and Extra Advancements for Default Era
+Saurian Visionnaire and Saurian Spearmaster taken from Reign of the Lords era (sprites and spearmaster's portrait)
+Saurian Witchdoctor is Visionnaire from Aldarisvet's "A Whim of Fate" campaign
+Arch Wose: Reign of the Lords
+Gryphon Knight: Reign of the Lords
+Dune Warmaster: Shuja from Dugi's "The Beautiful Child" (basically 1.13's Shuja animated by Dugi)
+misc, scenery, terrain folders from World Conquest
