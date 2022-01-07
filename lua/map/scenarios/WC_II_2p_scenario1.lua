@@ -8,7 +8,7 @@ local function get_enemy_data(enemy_power)
 		gold = 300,
 		bonus_gold = 150,
 		sides = {
-			wct_enemy(4, 1, 0, 0, 0, 2, 0),
+			wct_enemy(4, 1, 0, 0, 0, 2, 0, 0),
 		}
 	}
 end

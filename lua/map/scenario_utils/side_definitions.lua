@@ -112,6 +112,7 @@ function wc_ii_generate_sides(scenario, prestart_event, nplayers, scenario_num, 
 			wml.tag.recall {
 				level2 = side_data.recall_level2,
 				level3 = side_data.recall_level3,
+				level4 = side_data.recall_level4,
 			},
 		})
 		add_enemy_side(scenario, enemy_data.gold, i + nplayers)

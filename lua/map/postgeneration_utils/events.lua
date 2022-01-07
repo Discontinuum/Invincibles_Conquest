@@ -150,6 +150,7 @@ function wct_castle_expansion_side(side_num)
 	for i = 1, n_tiles_wanted do
 		map[candidates[i]] = "Ch"
 	end
+	wesnoth.log("warn", "okay")
 end
 
 function wct_enemy_castle_expansion()

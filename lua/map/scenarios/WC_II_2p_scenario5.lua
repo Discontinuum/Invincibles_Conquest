@@ -8,15 +8,15 @@ local generators = {
 
 local function get_enemy_data(enemy_power)
 	return {
-		gold = 350,
+		gold = 450,
 		bonus_gold = 175,
 		sides = {
-			wct_enemy(4, 3, 9, 2, 0, 18, "$($ic2_difficulty.enemy_power-2)"),
-			wct_enemy(5, 2, 8, 0, 0, "$($ic2_difficulty.enemy_power*2-1)", (enemy_power)),
-			wct_enemy(6, 3, 1, 7, 0, "$($ic2_difficulty.enemy_power*2-1)", "$($ic2_difficulty.enemy_power-1)"),
-			wct_enemy(7, 2, 1, 0, 0, "$($ic2_difficulty.enemy_power*2-1)", "$($ic2_difficulty.enemy_power-1)"),
-			wct_enemy(8, 2, 0, 2, 1, "$($ic2_difficulty.enemy_power*2-1)", 9),
-			wct_enemy(9, 2, 1, 4, 1, 17, "$($ic2_difficulty.enemy_power-1)"),
+			wct_enemy(4, 3, 9, 2, 0, 20, "$($ic2_difficulty.enemy_power-2)", "$($ic2_difficulty.enemy_power-5)"),
+			wct_enemy(5, 2, 8, 0, 0, "$($ic2_difficulty.enemy_power*2-1)", (enemy_power), (enemy_power - 2)),
+			wct_enemy(6, 3, 1, 7, 0, "$($ic2_difficulty.enemy_power*2)", "$($ic2_difficulty.enemy_power-1)", "$($ic2_difficulty.enemy_power-2)"),
+			wct_enemy(7, 2, 1, 0, 0, "$($ic2_difficulty.enemy_power*2)", "$($ic2_difficulty.enemy_power-1)", "$($ic2_difficulty.enemy_power-2)"),
+			wct_enemy(8, 2, 0, 2, 1, "$($ic2_difficulty.enemy_power*2-1)", 10, 7),
+			wct_enemy(9, 2, 1, 4, 1, 20, "$($ic2_difficulty.enemy_power-1)", "$($ic2_difficulty.enemy_power-5)"),
 		}
 	}
 end

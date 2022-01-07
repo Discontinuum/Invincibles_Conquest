@@ -173,6 +173,7 @@ function enemy.do_recall(cfg, group_id, loc)
 	end
 	recall_level(2)
 	recall_level(3)
+	recall_level(4)
 	side_variables["wc2.to_recall"] = table.concat(to_recall, ",")
 end
 
@@ -260,10 +261,17 @@ function wesnoth.wml_actions.ic2_enemy(cfg)
 		end
 	end
 	local leader_cfg = ic2_utils.pick_random_t(("ic2_enemy_army.group[%d].leader"):format(enemy_type_id))
+	local leader_type = scenario == 1 and leader_cfg.level2 or leader_cfg.level3
+	if scenario > 2 and leader_cfg.level4 then
+		leader_type = leader_cfg.level4
+	end
+	if scenario > 3 and leader_cfg.level5 then
+		leader_type = leader_cfg.level5
+	end
 	local unit = wesnoth.units.create {
 		x = loc[1],
 		y = loc[2],
-		type = scenario == 1 and leader_cfg.level2 or leader_cfg.level3,
+		type = leader_type,
 		side = side_num,
 		canrecruit = true,
 		generate_name = true,

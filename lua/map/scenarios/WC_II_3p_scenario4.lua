@@ -10,13 +10,13 @@ local generators = {
 
 local function get_enemy_data(enemy_power)
 	return {
-		gold = 300,
+		gold = 350,
 		bonus_gold = 150,
 		sides = {
-			wct_enemy(4, 2, 0, 5, 1, 9, 3),
-			wct_enemy(5, 0, 1, 0, 0, enemy_power, 3),
-			wct_enemy(6, 1, 1, 0, 0, enemy_power, 3),
-			wct_enemy(7, 0, 0, 3, 0, enemy_power, 3),
+			wct_enemy(4, 2, 0, 5, 1, 10, 4, 2),
+			wct_enemy(5, 0, 1, 0, 0, enemy_power, 4, 2),
+			wct_enemy(6, 1, 1, 0, 0, enemy_power, 4, 2),
+			wct_enemy(7, 0, 0, 3, 0, enemy_power, 4, 2),
 		}
 	}
 end

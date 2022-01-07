@@ -10,12 +10,12 @@ local generators = {
 
 local function get_enemy_data(enemy_power)
 	return {
-		gold = 300,
+		gold = 325,
 		bonus_gold = 140,
 		sides = {
-			wct_enemy(4, 0, 0, 0, 0, 4, 1),
-			wct_enemy(5, 0, 0, 6, 0, 4, 1),
-			wct_enemy(6, 1, 1, 0, 0, "$($ic2_difficulty.enemy_power-5)", 2),
+			wct_enemy(4, 0, 0, 0, 0, 5, 1, 0),
+			wct_enemy(5, 0, 0, 6, 0, 5, 2, 0),
+			wct_enemy(6, 1, 1, 0, 0, "$($ic2_difficulty.enemy_power-4)", 2, 0),
 		}
 	}
 end

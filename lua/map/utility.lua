@@ -9,7 +9,10 @@ setmetatable(globals, {
 	end,
 })
 
-function wct_enemy(side, com, item, train, sup, l2, l3)
+function wct_enemy(side, com, item, train, sup, l2, l3, l4)
+	if not l4 then
+		l4 = 0
+	end
 	return {
 		commander=com,
 		have_item=item,
@@ -17,6 +20,7 @@ function wct_enemy(side, com, item, train, sup, l2, l3)
 		supply=sup,
 		recall_level2 = l2,
 		recall_level3 = l3,
+		recall_level4 = l4,
 	}
 end
 
