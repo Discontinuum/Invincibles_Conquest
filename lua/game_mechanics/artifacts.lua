@@ -113,7 +113,8 @@ function artifacts.give_item(unit, index, visualize)
 	end
 	unit:add_modification("object", object)
 	--rebuild unit, to reduce savefile size.
-	unit:transform(unit.type)
+	--dunno how it reduced the savefile size but it reset LotI effects until the next recalc
+	--unit:transform(unit.type)
 	-- the artifact might reduce the max xp.
 	unit:advance(true, true)
 end
