@@ -15,6 +15,13 @@ function add_plot(scenario, scenario_num, nplayers)
 	local vicroy_event = { name = "enemies defeated" }
 	table.insert(scenario.event, start_event)
 	table.insert(scenario.event, vicroy_event)
+	local function narrator_message(caption, message)
+		table.insert(start_event, wml.tag.message {
+			message = message,
+			speaker = "narrator",
+			caption = caption
+		})
+	end
 	local function start_message(side, canrecruit, message)
 		table.insert(start_event, wml.tag.message {
 			message = message,
@@ -30,6 +37,9 @@ function add_plot(scenario, scenario_num, nplayers)
 		})
 	end
 	if scenario_num == 1 then
+		narrator_message("", _ "Welcome to Invincibles Conquest II!")
+		narrator_message(_"Warning: Mods", _ "Beware of any additional mods! LotI might not work with them, for example XP mod is incompatible with it!")
+		narrator_message("", _ "Have fun!")
 		if nplayers > 1 then
 			start_message("2", true, _ "To war! Prepare to defend yourselves!")
 			start_message("1", true, _ "Why do we fight amongst ourselves? We should band together and take the coast with our combined forces!")
