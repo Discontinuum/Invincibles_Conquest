@@ -168,6 +168,10 @@ schema.wct_artifact =  {
 			type = "list",
 			--id = "effect",
 		},
+		trait = {
+			type = "list",
+			--id = "effect",
+		},
 		filter = {
 			type = "single",
 			--id = "standard_unit_filter",

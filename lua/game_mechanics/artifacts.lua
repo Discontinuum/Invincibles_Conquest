@@ -108,13 +108,24 @@ function artifacts.give_item(unit, index, visualize)
 	--       One of the reasons why i currently won't do this is to make the artifacts list
 	--       more flixible: the suggested approach requires that artifacts are loaded before
 	--       units are created which means artifacts must be loaded at toplevel [lua] tags
-	for i, effect in ipairs(aftifact_data.effect) do
-		table.insert(object, wml.tag.effect (effect) )
+	if aftifact_data.effect then
+		for i, effect in ipairs(aftifact_data.effect) do
+			table.insert(object, wml.tag.effect (effect) )
+		end
 	end
 	unit:add_modification("object", object)
 	--rebuild unit, to reduce savefile size.
 	--dunno how it reduced the savefile size but it reset LotI effects until the next recalc
 	--unit:transform(unit.type)
+	
+	if aftifact_data.trait then
+		for i, trait in ipairs(aftifact_data.trait) do
+			if unit:matches { wml.tag.filter_wml { wml.tag.modifications { wml.tag.trait { id = trait.id } } } } then
+			else
+				unit:add_modification("trait", trait)
+			end
+		end
+	end
 	-- the artifact might reduce the max xp.
 	unit:advance(true, true)
 end
