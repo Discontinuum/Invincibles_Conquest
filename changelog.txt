@@ -1,0 +1,12 @@
+Version 1.0.2 (4 Apr 2022):
+Fixed banner
+Fixed a bug when commanders didn't replace leaders properly (Peasant appeared as the leader in the next map)
+Fixed bezoar (now it adds traits as it should)
+Number of bonus points is now the same as the number of players
+Revised XP of LotI WC extra advancement lines
+
+Version 1.0.1 (15 Jan 2022):
+Fixed artifacts resetting items;
+Fixed Winged Sceptre;
+Nerfed ranged axe of Gryphon Knyght;
+Brought back options and the welcoming message.
