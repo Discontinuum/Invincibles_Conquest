@@ -90,9 +90,9 @@ function ic2_heroes.place(t, side, x, y, is_commander)
 end
 
 function wesnoth.wml_actions.ic2_random_hero(cfg)
-	local side_num = cfg.side or helper.wml_error("missing side= attribute in [ic2_initial_hero]")
-	local x = cfg.x or helper.wml_error("missing x= attribute in [ic2_initial_hero]")
-	local y = cfg.y or helper.wml_error("missing y= attribute in [ic2_initial_hero]")
+	local side_num = cfg.side or wml.error("missing side= attribute in [ic2_initial_hero]")
+	local x = cfg.x or wml.error("missing x= attribute in [ic2_initial_hero]")
+	local y = cfg.y or wml.error("missing y= attribute in [ic2_initial_hero]")
 	local t = ic2_era.pick_deserter(side_num)
 
 	if t == nil then
