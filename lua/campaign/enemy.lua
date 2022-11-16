@@ -261,6 +261,7 @@ function wesnoth.wml_actions.ic2_enemy(cfg)
 		end
 	end
 	local leader_cfg = ic2_utils.pick_random_t(("ic2_enemy_army.group[%d].leader"):format(enemy_type_id))
+	--- remember that leaders lists update only when you start the whole campaign anew
 	local leader_type = scenario == 1 and leader_cfg.level2 or leader_cfg.level3
 	if scenario > 2 and leader_cfg.level4 then
 		leader_type = leader_cfg.level4

@@ -1,0 +1,40 @@
+{
+		id = "monsters",
+		recruit = {"Young Ogre","Wolf","Woodland Boar","Giant Mudcrawler","Blood Bat"},
+		recall = {
+			level2 = {"Dread Bat", "Gryphon", "Great Horse", "Black Horse", "Cave Bear", "Cuttle Fish", "Fire Wraith", "Great Icemonax", "Roc", "Swamp Lizard", "Water Serpent", "Ogre", "Great Wolf"},
+			level3 = {"Doom Bat LotI", "Giant Spider", "Sea Serpent", "Direwolf", "Great Ogre LotI", "Flies", "Ice Spirit"},
+			level4 = {"Spell Eater"},
+		},
+		commander = {
+			level1 = {"Young Ogre","Fire Guardian","Woodland Boar","Giant Mudcrawler","Horned Scarab"},
+			level2 = {"Cave Bear", "Cuttle Fish", "Fire Wraith", "Great Icemonax", "Water Serpent", "Ogre", "Great Wolf"},
+			level3 = {"Ice Spirit","Giant Spider","Sea Serpent","Direwolf", "Great Ogre LotI"},
+		},
+		leader = {
+			{
+				level2 = "Great Wolf",
+				level3 = "Direwolf",
+				--level4 = "Dwarvish Hero",
+				recruit = {"White Horse","Wolf", "Bay Horse", "Woodland Boar"},
+			},
+			{
+				level2 = "Great Icemonax",
+				level3 = "Ice Spirit",
+				level4 = "Yeti",
+				recruit = {"Dark Horse","Rock Scorpion","Elder Falcon","Wolf"},
+			},
+			{
+				level2 = "Cave Bear",
+				level3 = "Giant Spider",
+				--level4 = "Dwarvish Protector",
+				recruit = {"Giant Scorpion","Rock Scorpion","Blood Bat","Fire Ant"},
+			},
+			{
+				level2 = "Ogre",
+				level3 = "Great Ogre LotI",
+				level4 = "Yeti",
+				recruit = {"Young Ogre","Horned Scarab","Fire Guardian","Giant Mudcrawler","Woodland Boar"},
+			},
+		}
+	},

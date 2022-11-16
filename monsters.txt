@@ -1,0 +1,5 @@
+1lvl: Blood Bat, Elder Falcon, Bay Horse, Dark Horse, White Horse, Fire Ant, Fire Guardian, Giant Scorpion, Horned Scarab, Giant Mudcrawler, Woodland Boar, Rock Scorpion, Young Ogre, Wolf
+2lvl: Dread Bat, Gryphon, Great Horse, Black Horse, Cave Bear, Cuttlefish, Fire Wraith, Great Icemonax, Roc, Swamp Lizard, Water Serpent, Ogre, Great Wolf
+3lvl: Doom Bat LotI, Giant Spider, Sea Serpent, Direwolf, Great Ogre LotI, <Flies>, <Ice Spirit>
+4lvl: Yeti, <Spell Eater>, <Vritra_later>
+5lbl: <Amplificator>

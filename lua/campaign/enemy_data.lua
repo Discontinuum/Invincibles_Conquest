@@ -15,8 +15,8 @@ enemy_army.group = {
 		},
 		commander = {
 			level1 = {"Orcish Leader","Orcish Grunt","Orcish Archer","Orcish Assassin"},
-			level2 = {"Orcish Ruler","Troll Hero","Orcish Slayer","Orcish Crossbowman","Troll Rocklobber","Troll","Orcish Warrior"},
-			level3 = {"Orcish Warlord","Troll Warrior","Orcish Slurbow","Orcish Sovereign","Great Troll"},
+			level2 = {"Orcish Ruler","Troll Hero","Orcish Slayer","Orcish Crossbowman","Troll Rocklobber","Troll","Orcish Warrior", "Goblin Warbanner", "Troll Shaman"},
+			level3 = {"Orcish Warlord","Troll Warrior","Orcish Slurbow","Orcish Sovereign","Great Troll", "Orcish Nightblade loti"},
 		},
 		leader = {
 			{
@@ -70,8 +70,8 @@ enemy_army.group = {
 		},
 		commander = {
 			level1 = {"Sergeant","Spearman","Bowman","Mage","Fencer","Heavy Infantryman"},
-			level2 = {"White Mage","Red Mage","Duelist","Longbowman","Shock Trooper","Pikeman","Swordsman","Lieutenant","Javelineer"},
-			level3 = {"General","Halberdier","Royal Guard","Silver Mage","Iron Mauler","Master Bowman","Master at Arms","Arch Mage","Mage of Light"},
+			level2 = {"White Mage","Red Mage","Duelist","Longbowman","Shock Trooper","Pikeman","Swordsman","Lieutenant","Javelineer", "Sword Mage"},
+			level3 = {"General","Halberdier","Royal Guard","Silver Mage","Iron Mauler","Master Bowman","Master at Arms","Arch Mage","Mage of Light", "Knight of Magic", "Pilum Master"},
 		},
 		leader = {
 			{
@@ -92,6 +92,7 @@ enemy_army.group = {
 				level2 = "Pikeman",
 				level3 = "Halberdier",
 				level4 = "Scythemaster",
+				level5 = "The Prince",
 				recruit = {"Spearman","Bowman","Cavalryman","Horseman","Mage"},
 			},
 			{
@@ -137,13 +138,13 @@ enemy_army.group = {
 		id = "elves",
 		recruit = {"Elvish Fighter","Elvish Archer","Elvish Shaman","Elvish Scout","Wose"},
 		recall = {
-			level2 = {"Elder Wose","Elvish Sorceress","Elvish Druid","Elvish Marksman","Elvish Ranger","Elvish Hero","Elvish Captain","Elvish Rider","Elder Wose","Elvish Hero","Elder Wose","Elvish Sorceress","Red Mage","Elvish Marksman","Elvish Ranger","Elvish Hero","Elvish Captain","Elvish Rider","Elvish Ranger","Elvish Hero"},
+			level2 = {"Elder Wose","Elvish Sorceress","Elvish Druid","Elvish Marksman","Elvish Ranger","Elvish Hero","Elvish Captain","Elvish Rider","Elder Wose","Elvish Hero","Elder Wose","Elvish Sorceress","Red Mage","Elvish Marksman","Elvish Ranger","Elvish Hero","Elvish Captain","Elvish Rider","Elvish Ranger","Elvish Hero", "Wose Shaman"},
 			level3 = {"Elvish Marshal","Elvish Champion","Elvish Avenger","Elvish Sharpshooter","Elvish Shyde","Elvish Enchantress","Ancient Wose","Elvish Outrider","Ancient Wose","Elvish Champion","Elvish Marshal","Elvish Champion","Elvish Avenger","Elvish Sharpshooter","Arch Mage","Elvish Enchantress","Ancient Wose","Elvish Outrider","Elvish Avenger","Elvish Champion"},
 			level4 = {"Elvish Warlord","Elvish Juggernaut","Elvish Juggernaut","Elvish Nightprowler","Elvish Assassin","Faerie Incarnation","Elvish Sylph","Arch Wose LotI","Elvish Gryphon Rider", "Elvish Gryphon Rider"},
 		},
 		commander = {
 			level1 = {"Elvish Shaman","Elvish Fighter","Elvish Archer","Wose"},
-			level2 = {"Elder Wose","Elvish Sorceress","Elvish Druid","Elvish Marksman","Elvish Ranger","Elvish Hero","Elvish Captain","Elvish Lord"},
+			level2 = {"Elder Wose","Elvish Sorceress","Elvish Druid","Elvish Marksman","Elvish Ranger","Elvish Hero","Elvish Captain","Elvish Lord", "Wose Shaman"},
 			level3 = {"Elvish Marshal","Elvish Champion","Elvish Avenger","Elvish Sharpshooter","Elvish Shyde","Elvish Enchantress","Ancient Wose","Arch Mage","Elvish High Lord"},
 		},
 		leader = {
@@ -203,8 +204,8 @@ enemy_army.group = {
 		},
 		commander = {
 			level1 = {"Dwarvish Thunderer","Dwarvish Fighter","Dwarvish Guardsman","Dwarvish Scout","Thief","Poacher"},
-			level2 = {"Dwarvish Stalwart","Dwarvish Thunderguard","Dwarvish Steelclad","Dwarvish Pathfinder","Rogue","Trapper"},
-			level3 = {"Dwarvish Lord","Dwarvish Dragonguard","Dwarvish Sentinel","Assassin","Huntsman","Highwayman","Dwarvish Explorer"},
+			level2 = {"Dwarvish Stalwart","Dwarvish Thunderguard","Dwarvish Steelclad","Dwarvish Pathfinder","Rogue","Trapper", "Dwarvish Runesmith"},
+			level3 = {"Dwarvish Lord","Dwarvish Dragonguard","Dwarvish Sentinel","Assassin","Huntsman","Highwayman","Dwarvish Explorer", "Dwarvish Runemaster"},
 		},
 		leader = {
 			{
@@ -256,7 +257,7 @@ enemy_army.group = {
 		commander = {
 			level1 = {"Drake Burner","Drake Fighter","Drake Clasher","Saurian Augur","Saurian Skirmisher"},
 			level2 = {"Drake Arbiter","Drake Thrasher","Drake Warrior","Fire Drake","Drake Flare","Saurian Ambusher","Saurian Oracle"},
-			level3 = {"Drake Flameheart","Inferno Drake","Drake Blademaster","Drake Enforcer","Drake Warden","Saurian Flanker"},
+			level3 = {"Drake Flameheart","Inferno Drake","Drake Blademaster","Drake Enforcer","Drake Warden","Saurian Flanker","Saurian Visionnaire LotI","Saurian Witchdoctor LotI"},
 		},
 		leader = {
 			{
@@ -268,6 +269,7 @@ enemy_army.group = {
 				level2 = "Fire Drake",
 				level3 = "Inferno Drake",
 				level4 = "Armageddon Drake LotI",
+				level5 = "Fire Dragon loti",
 				recruit = {"Drake Fighter","Saurian Augur","Drake Glider","Drake Burner"},
 			},
 			{
@@ -313,8 +315,8 @@ enemy_army.group = {
 		},
 		commander = {
 			level1 = {"Dark Adept","Skeleton Archer","Skeleton","Ghoul"},
-			level2 = {"Revenant","Deathblade","Bone Shooter","Dark Sorcerer","Necrophage"},
-			level3 = {"Draug","Death Knight","Necromancer","Lich","Ghast","Banebow"},
+			level2 = {"Revenant","Deathblade","Bone Shooter","Dark Sorcerer","Necrophage", "Monstrosity"},
+			level3 = {"Draug","Death Knight","Necromancer","Lich","Ghast","Banebow", "Phantom"},
 		},
 		leader = {
 			{
@@ -360,13 +362,13 @@ enemy_army.group = {
 		id = "dunefolk",
 		recruit = {"Dune Soldier","Dune Burner","Dune Rider","Dune Skirmisher","Dune Rover","Naga Dirkfang"},
 		recall = {
-			level2 = {"Dune Captain","Dune Strider","Dune Scorcher","Dune Alchemist","Dune Falconer","Dune Swordsman","Dune Horse Archer","Dune Sunderer","Dune Scorcher","Dune Apothecary","Dune Swordsman","Dune Spearguard"},
+			level2 = {"Dune Captain","Dune Strider","Dune Scorcher","Dune Alchemist","Dune Falconer","Dune Swordsman","Dune Horse Archer","Dune Sunderer","Dune Scorcher","Dune Apothecary","Dune Swordsman","Dune Spearguard", "Jinn"},
 			level3 = {"Dune Blademaster","Dune Sky Hunter","Dune Firetrooper","Dune Warmaster","Dune Cataphract","Dune Blademaster","Dune Luminary","Dune Firetrooper","Dune Spearmaster","Dune Cataphract", "Wild Wyvern"},
 			level4 = {"Dune Paragon","Wyvern Rider"}
 		},
 		commander = {
 			level1 = {"Dune Soldier","Dune Soldier","Dune Burner","Dune Skirmisher"},
-			level2 = {"Dune Captain","Dune Spearguard","Dune Strider","Dune Scorcher","Dune Alchemist","Dune Apothecary","Dune Swordsman"},
+			level2 = {"Dune Captain","Dune Spearguard","Dune Strider","Dune Scorcher","Dune Alchemist","Dune Apothecary","Dune Swordsman", "Jinn"},
 			level3 = {"Dune Blademaster","Dune Luminary","Dune Firetrooper","Dune Warmaster","Dune Spearmaster"},
 		},
 		leader = {
