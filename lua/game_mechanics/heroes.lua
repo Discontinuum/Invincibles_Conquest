@@ -96,7 +96,7 @@ function wesnoth.wml_actions.ic2_random_hero(cfg)
 	local t = ic2_era.pick_deserter(side_num)
 
 	if t == nil then
-		print("No serserter available for side", side_num)
+		print("No derserter available for side", side_num)
 		return
 	end
 	ic2_heroes.place(t, side_num, x, y)
