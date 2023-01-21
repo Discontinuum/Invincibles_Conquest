@@ -29,9 +29,9 @@ on_event("die", function(cx)
 			message = strings.promotion
 		}
 	else
-		if u.side < 4 then
+		if u.side < 5 then
 			wesnoth.wml_actions.message {
-				side = "1,2,3",
+				side = "1,2,3,4",
 				message = strings.defeat
 			}
 			wesnoth.wml_actions.endlevel {

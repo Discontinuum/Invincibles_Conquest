@@ -3,7 +3,7 @@ local ic2_scenario = {}
 local on_event = wesnoth.require("on_event")
 
 function ic2_scenario.is_human_side(side_num)
-	return side_num == 1 or side_num == 2 or side_num == 3
+	return side_num == 1 or side_num == 2 or side_num == 3 or side_num == 4
 end
 
 function ic2_scenario.scenario_num()

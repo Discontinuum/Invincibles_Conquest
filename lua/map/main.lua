@@ -100,7 +100,7 @@ function wc_ii_generate_scenario(nplayers, gen_args)
 			wml.tag.ic2_store_carryover {
 				nvillages = n_villages[scenario_num] + 2 * nplayers,
 				wml.tag.sides {
-					side="1,2,3",
+					side="1,2,3,4",
 					wml.tag.has_unit {
 					}
 				}

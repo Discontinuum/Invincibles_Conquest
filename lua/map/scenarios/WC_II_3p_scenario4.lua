@@ -13,10 +13,10 @@ local function get_enemy_data(enemy_power)
 		gold = 350,
 		bonus_gold = 150,
 		sides = {
-			wct_enemy(4, 2, 0, 5, 1, 10, 4, 2),
-			wct_enemy(5, 0, 1, 0, 0, enemy_power, 4, 2),
-			wct_enemy(6, 1, 1, 0, 0, enemy_power, 4, 2),
-			wct_enemy(7, 0, 0, 3, 0, enemy_power, 4, 2),
+			wct_enemy(5, 2, 0, 5, 1, 10, 4, 2),
+			wct_enemy(6, 0, 1, 0, 0, enemy_power, 4, 2),
+			wct_enemy(7, 1, 1, 0, 0, enemy_power, 4, 2),
+			wct_enemy(8, 0, 0, 3, 0, enemy_power, 4, 2),
 		}
 	}
 end

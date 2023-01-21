@@ -93,7 +93,7 @@ function wc_ii_generate_sides(scenario, prestart_event, nplayers, scenario_num, 
 	for i = 1, nplayers do
 		add_player_side(scenario, scenario_num, scenario_data.player_gold)
 	end
-	for i = nplayers + 1, 3 do
+	for i = nplayers + 1, 4 do
 		add_empty_side(scenario)
 	end
 	for i = 1, n_enemty_sides do
