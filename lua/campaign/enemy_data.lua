@@ -14,9 +14,9 @@ enemy_army.group = {
 			level4 = {"Orcish Warmonger","Siege Troll","Orcish Strafer","Werewolf Rider","Orcish Warmonger","Siege Troll","Orcish Strafer","Werewolf Rider"},
 		},
 		commander = {
-			level1 = {"Orcish Leader","Orcish Grunt","Orcish Archer","Orcish Assassin"},
-			level2 = {"Orcish Ruler","Troll Hero","Orcish Slayer","Orcish Crossbowman","Troll Rocklobber","Troll","Orcish Warrior", "Goblin Warbanner", "Troll Shaman"},
-			level3 = {"Orcish Warlord","Troll Warrior","Orcish Slurbow","Orcish Sovereign","Great Troll", "Orcish Nightblade loti"},
+			level1 = {"Orcish Leader","Orcish Grunt","Orcish Archer","Orcish Assassin", "Naga Guard"},
+			level2 = {"Orcish Ruler","Troll Hero","Orcish Slayer","Orcish Crossbowman","Troll Rocklobber","Troll","Orcish Warrior", "Goblin Warbanner", "Troll Shaman", "Naga Shield Guard"},
+			level3 = {"Orcish Warlord","Troll Warrior","Orcish Slurbow","Orcish Sovereign","Great Troll", "Orcish Nightblade loti", "Naga High Guard"},
 		},
 		leader = {
 			{
@@ -408,6 +408,11 @@ enemy_army.group = {
 				level2 = "Dune Captain",
 				level3 = "Dune Warmaster",
 				recruit = {"Dune Soldier","Dune Rover","Dune Rider","Dune Burner"},
+			},
+			{
+				level2 = "Dune Falconer",
+				level3 = "Dune Sky Hunter",
+				recruit = {"Dune Soldier","Elder Falcon","Dune Rider","Dune Burner"},
 			},
 		}
 	},
