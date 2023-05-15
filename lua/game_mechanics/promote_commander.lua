@@ -8,6 +8,9 @@ local strings = {
 
 -- when a leader dies, take a commonder and make him the leader.
 on_event("die", function(cx)
+	if not cx.x1 then
+		return
+	end
 	local u = wesnoth.units.get(cx.x1, cx.y1)
 	if (not u) or (not u:matches({ canrecruit = true })) then
 		return
