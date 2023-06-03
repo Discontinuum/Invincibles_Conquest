@@ -10,13 +10,13 @@ enemy_army.group = {
 		recruit = {"Orcish Grunt","Orcish Archer","Wolf Rider","Orcish Assassin","Troll Whelp"},
 		recall = {
 			level2 = {"Orcish Ruler","Orcish Slayer","Orcish Crossbowman","Troll Rocklobber","Troll","Orcish Warrior","Goblin Pillager","Goblin Knight","Orcish Crossbowman","Troll","Orcish Warrior","Troll Hero", "Sky Goblin", "Goblin Warbanner"},
-			level3 = {"Orcish Warlord","Troll Warrior","Orcish Slurbow","Orcish Sovereign","Direwolf Rider","Orcish Warlord","Troll Warrior","Orcish Slurbow","Great Troll","Direwolf Rider", "Goblin Ravager", "Orcish Nightblade loti"},
-			level4 = {"Orcish Warmonger","Siege Troll","Orcish Strafer","Werewolf Rider","Orcish Warmonger","Siege Troll","Orcish Strafer","Werewolf Rider"},
+			level3 = {"Orcish Warlord","Troll Warrior","Orcish Slurbow","Orcish Sovereign","Direwolf Rider","Orcish Warlord","Troll Warrior","Orcish Slurbow","Great Troll","Direwolf Rider", "Goblin Ravager", "Orcish Nightblade loti", "Troll Boulderlobber"},
+			level4 = {"Orcish Warmonger","Siege Troll","Orcish Strafer","Werewolf Rider","Orcish Warmonger","Siege Troll","Orcish Strafer","Werewolf Rider", "Orcish Emperor LotI"},
 		},
 		commander = {
 			level1 = {"Orcish Leader","Orcish Grunt","Orcish Archer","Orcish Assassin", "Naga Guard"},
 			level2 = {"Orcish Ruler","Troll Hero","Orcish Slayer","Orcish Crossbowman","Troll Rocklobber","Troll","Orcish Warrior", "Goblin Warbanner", "Troll Shaman", "Naga Shield Guard"},
-			level3 = {"Orcish Warlord","Troll Warrior","Orcish Slurbow","Orcish Sovereign","Great Troll", "Orcish Nightblade loti", "Naga High Guard"},
+			level3 = {"Orcish Warlord","Troll Warrior","Orcish Slurbow","Orcish Sovereign","Great Troll", "Orcish Nightblade loti", "Naga High Guard", "Troll Boulderlobber"},
 		},
 		leader = {
 			{
@@ -32,8 +32,14 @@ enemy_army.group = {
 				recruit = {"Orcish Grunt","Orcish Archer","Orcish Assassin","Troll Whelp"},
 			},
 			{
-				level2 = "Troll Rocklobber",
+				level2 = "Troll Hero",
 				level3 = "Great Troll",
+				level4 = "Garguntuan Troll LotI",
+				recruit = {"Naga Guard","Orcish Archer","Orcish Assassin","Troll Whelp"},
+			},
+			{
+				level2 = "Troll Rocklobber",
+				level3 = "Troll Boulderlobber",
 				recruit = {"Orcish Grunt","Orcish Assassin","Wolf Rider","Troll Whelp"},
 			},
 			{
@@ -56,6 +62,7 @@ enemy_army.group = {
 			{
 				level2 = "Orcish Ruler",
 				level3 = "Orcish Sovereign",
+				level4 = "Orcish Emperor LotI",
 				recruit = {"Orcish Grunt","Orcish Leader","Wolf Rider","Orcish Archer"},
 			},
 		}
@@ -190,7 +197,7 @@ enemy_army.group = {
 				level3 = "Ancient Wose",
 				level4 = "Arch Wose LotI",
 				level5 = "Elvish Sprite",
-				recruit = {"Elvish Shaman","Elvish Fighter","Mage"," Wose"},
+				recruit = {"Elvish Shaman","Elvish Fighter","Mage","Wose"},
 			},
 		}
 	},
@@ -199,7 +206,7 @@ enemy_army.group = {
 		recruit = {"Dwarvish Fighter","Dwarvish Thunderer","Thief","Footpad","Poacher"},
 		recall = {
 			level2 = {"Dwarvish Stalwart","Dwarvish Thunderguard","Dwarvish Steelclad","Rogue","Trapper","Gryphon Master","Bandit","Outlaw","Dwarvish Stalwart","Dwarvish Thunderguard","Dwarvish Steelclad","Dwarvish Berserker"},
-			level3 = {"Dwarvish Lord","Dwarvish Dragonguard","Dwarvish Sentinel","Assassin","Huntsman","Fugitive","Highwayman","Dwarvish Lord","Dwarvish Dragonguard","Dwarvish Sentinel"},
+			level3 = {"Dwarvish Lord","Dwarvish Dragonguard","Dwarvish Sentinel","Assassin","Huntsman","Fugitive","Highwayman","Dwarvish Lord","Dwarvish Dragonguard","Dwarvish Sentinel", "Dwarvish Battlerager", "Gryphon Knight LotI"},
 			level4 = {"Dwarvish Hero", "Dwarvish Technocrat", "Dwarvish Protector", "Exterminator", "Predator", "Blackguard", "Shadow Prince", "Forester", "Dwarvish Technocrat", "Dwarvish Protector"},
 		},
 		commander = {
@@ -244,6 +251,12 @@ enemy_army.group = {
 				level4 = "Blackguard",
 				recruit = {"Thug","Thief","Dwarvish Thunderer","Dwarvish Ulfserker","Dwarvish Fighter"},
 			},
+			{
+				level2 = "Dwarvish Runesmith",
+				level3 = "Dwarvish Runemaster",
+				level4 = "Dwarvish Arcanister",
+				recruit = {"Dwarvish Fighter","Dwarvish Thunderer","Dwarvish Ulfserker","Thug"},
+			},
 		}
 	},
 	{
@@ -251,8 +264,8 @@ enemy_army.group = {
 		recruit = {"Drake Fighter","Drake Clasher","Drake Glider","Drake Burner","Saurian Augur"},
 		recall = {
 			level2 = {"Drake Arbiter","Drake Thrasher","Drake Warrior","Fire Drake","Drake Flare","Saurian Oracle","Saurian Soothsayer","Saurian Ambusher","Drake Warrior","Drake Thrasher","Sky Drake", "Fire Wraith"},
-			level3 = {"Drake Flameheart","Inferno Drake","Drake Blademaster","Drake Blademaster","Drake Enforcer","Drake Warden","Saurian Flanker","Saurian Flanker","Hurricane Drake","Saurian Visionnaire LotI","Saurian Witchdoctor LotI"},
-			level4 = {"Armageddon Drake LotI","Saurian Spearmaster LotI","Armageddon Drake LotI","Saurian Spearmaster LotI"}
+			level3 = {"Drake Flameheart","Inferno Drake","Drake Blademaster","Drake Blademaster","Drake Enforcer","Drake Warden","Saurian Flanker","Saurian Flanker","Hurricane Drake","Saurian Visionnaire LotI","Saurian Witchdoctor LotI", "Ice Spirit"},
+			level4 = {"Armageddon Drake LotI","Saurian Spearmaster LotI","Maelstrom Drake LotI","Drake Kensai LotI", "Ice Wraith", "Drake Keeper LotI", "Drake Firestorm LotI", "Drake Conqueror LotI"}
 		},
 		commander = {
 			level1 = {"Drake Burner","Drake Fighter","Drake Clasher","Saurian Augur","Saurian Skirmisher"},
@@ -263,6 +276,7 @@ enemy_army.group = {
 			{
 				level2 = "Drake Flare",
 				level3 = "Drake Flameheart",
+				level4 = "Drake Firestorm LotI",
 				recruit = {"Drake Fighter","Drake Clasher","Drake Glider","Drake Burner"},
 			},
 			{
@@ -275,16 +289,19 @@ enemy_army.group = {
 			{
 				level2 = "Drake Warrior",
 				level3 = "Drake Blademaster",
+				level4 = "Drake Kensai LotI",
 				recruit = {"Drake Fighter","Saurian Skirmisher","Drake Glider","Drake Burner"},
 			},
 			{
 				level2 = "Drake Thrasher",
 				level3 = "Drake Enforcer",
+				level4 = "Drake Conqueror LotI",
 				recruit = {"Drake Fighter","Drake Clasher","Saurian Skirmisher","Drake Burner"},
 			},
 			{
 				level2 = "Drake Arbiter",
 				level3 = "Drake Warden",
+				level4 = "Drake Keeper LotI",
 				recruit = {"Saurian Skirmisher","Drake Clasher","Drake Glider","Drake Burner"},
 			},
 			{
@@ -296,6 +313,7 @@ enemy_army.group = {
 			{
 				level2 = "Saurian Soothsayer",
 				level3 = "Saurian Witchdoctor LotI",
+				level4 = "Maelstrom Drake LotI",
 				recruit = {"Saurian Skirmisher","Saurian Augur","Drake Glider","Drake Fighter"},
 			},
 			{
@@ -310,12 +328,12 @@ enemy_army.group = {
 		recruit = {"Skeleton","Skeleton Archer","Ghost","Ghoul","Dark Adept"},
 		recall = {
 			level2 = {"Revenant","Deathblade","Bone Shooter","Dark Sorcerer","Necrophage","Wraith","Shadow","Revenant","Bone Shooter","Dark Sorcerer","Necrophage","Chocobone", "Monstrosity"},
-			level3 = {"Draug","Death Knight","Necromancer","Lich","Ghast","Banebow","Spectre","Nightgaunt","Draug","Ghast","Banebow", "Zombie Rider", "Phantom" ,"Grim Knight"},
-			level4 = {"Deathlord","Infernal Knight","Soul Shooter","09 Ancient Lich","Abomination","Demilich", "Lich King", "Dark Shade", "Reaper"},
+			level3 = {"Draug","Death Knight","Necromancer","Lich","Ghast","Banebow","Spectre","Nightgaunt","Draug","Ghast","Banebow", "Zombie Rider", "Phantom", "Grim Knight"},
+			level4 = {"Deathlord","Infernal Knight","Soul Shooter","09 Ancient Lich","Abomination","Demilich", "Lich King", "Dark Shade", "Reaper", "Skeletal Dragon LotI"},
 		},
 		commander = {
-			level1 = {"Dark Adept","Skeleton Archer","Skeleton","Ghoul"},
-			level2 = {"Revenant","Deathblade","Bone Shooter","Dark Sorcerer","Necrophage", "Monstrosity"},
+			level1 = {"Dark Adept","Skeleton Archer","Skeleton","Ghoul", "Mist"},
+			level2 = {"Revenant","Deathblade","Bone Shooter","Dark Sorcerer","Necrophage", "Monstrosity", "Will_o_Wisp"},
 			level3 = {"Draug","Death Knight","Necromancer","Lich","Ghast","Banebow", "Phantom"},
 		},
 		leader = {
@@ -386,11 +404,13 @@ enemy_army.group = {
 			{
 				level2 = "Dune Alchemist",
 				level3 = "Dune Spearmaster",
+				level4 = "Black Army Pikeman",
 				recruit = {"Dune Soldier","Dune Skirmisher","Dune Rider","Dune Herbalist"},
 			},
 			{
 				level2 = "Dune Scorcher",
 				level3 = "Dune Firetrooper",
+				level4 = "Black Army Mage",
 				recruit = {"Dune Soldier","Dune Burner","Dune Rider","Dune Skirmisher"},
 			},
 			{
@@ -407,11 +427,13 @@ enemy_army.group = {
 			{
 				level2 = "Dune Captain",
 				level3 = "Dune Warmaster",
+				level4 = "Black Army Swordsman",
 				recruit = {"Dune Soldier","Dune Rover","Dune Rider","Dune Burner"},
 			},
 			{
 				level2 = "Dune Falconer",
 				level3 = "Dune Sky Hunter",
+				level4 = "Black Army Bowman",
 				recruit = {"Dune Soldier","Elder Falcon","Dune Rider","Dune Burner"},
 			},
 		}
