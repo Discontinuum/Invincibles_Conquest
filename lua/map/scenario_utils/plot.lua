@@ -38,7 +38,7 @@ function add_plot(scenario, scenario_num, nplayers)
 	end
 	if scenario_num == 1 then
 		narrator_message("", _ "Welcome to Invincibles Conquest II!")
-		narrator_message(_"Warning: Mods", _ "Beware of any additional mods! LotI might not work with them, for example XP mod is incompatible with it!")
+		narrator_message(_"Warning: Mods", _ "Beware of any additional mods, LotI might not work with them!")
 		narrator_message("", _ "Have fun!")
 		if nplayers > 1 then
 			start_message("2", true, _ "To war! Prepare to defend yourselves!")
