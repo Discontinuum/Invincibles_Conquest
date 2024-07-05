@@ -1,5 +1,4 @@
 _ = wesnoth.textdomain 'wesnoth-wc'
-helper = wesnoth.require("helper")
 utils = wesnoth.require("wml-utils")
 functional = wesnoth.require("functional")
 ic2_convert = wesnoth.dofile("./../shared_utils/wml_converter.lua")
@@ -32,6 +31,10 @@ local function get_map_generator(scenario_data)
 	end
 end
 
+local function get_scenario_data(nplayers, scenario_num)
+	return wesnoth.dofile(string.format("./scenarios/WC_II_%dp_scenario%d.lua", nplayers, scenario_num))
+end
+
 
 function wc_ii_generate_scenario(nplayers, gen_args)
 	nplayers = settings.nplayers or nplayers
@@ -39,8 +42,9 @@ function wc_ii_generate_scenario(nplayers, gen_args)
 	local scenario_num = settings.scenario_num or wml.variables.ic2_scenario or 1
 	--todo: does this work properly in the first scenario?
 	local enemy_stength = wml.variables["ic2_difficulty.enemy_power"] or 6
-	local scenario_data = wesnoth.dofile(string.format("./scenarios/WC_II_%dp_scenario%d.lua", nplayers, scenario_num))
-
+	std_print("test_nplayers", wml.variables.test_nplayers)
+	local scenario_data = get_scenario_data(nplayers, scenario_num)
+	
 	local prestart_event = { name = "prestart" }
 	-- our [scenario] skeleton
 	local scenario = {
@@ -88,7 +92,7 @@ function wc_ii_generate_scenario(nplayers, gen_args)
 
 	-- add [side]s to the [scenario]
 	local enemy_data = scenario_data.get_enemy_data(enemy_stength)
-	wc_ii_generate_sides(scenario, prestart_event, nplayers, scenario_num, enemy_stength, enemy_data, scenario_data)
+	wc_ii_generate_sides(scenario, prestart_event, nplayers, scenario_num, enemy_data, scenario_data)
 
 	-- add plot (that is [event] with [message]s)
 	add_plot(scenario, scenario_num, nplayers)

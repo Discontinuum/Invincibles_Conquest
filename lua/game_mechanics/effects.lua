@@ -1,5 +1,4 @@
 local _ = wesnoth.textdomain 'wesnoth-wc'
-local helper = wesnoth.require("helper")
 local T = wml.tag
 
 local terrain_map = { fungus = "Tt", cave = "Ut", sand = "Dt", 

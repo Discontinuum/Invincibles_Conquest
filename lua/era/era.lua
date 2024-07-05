@@ -88,7 +88,7 @@ local function init_side(side_num)
 		faction = ic2_era.factions_wml[mathx.random(#ic2_era.factions_wml)]
 	end
 
-	if not faction then
+	if not (faction and faction.heroes) then
 		faction = ic2_era.create_random_faction()
 	end
 
