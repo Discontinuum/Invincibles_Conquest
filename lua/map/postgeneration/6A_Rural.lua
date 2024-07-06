@@ -175,7 +175,7 @@ local function world_conquest_tek_map_decoration_6a()
 		))
 	))
 
-	local r = mathx.random_choice(tostring(total_tiles // 930) .. ".." .. tostring(total_tiles // 210))
+	local r = mathx.random_choice(tostring(scenario_data.total_tiles // 930) .. ".." .. tostring(scenario_data.total_tiles // 210))
 	wct_storm(terrain_to_change, r + 2)
 
 	wct_expand_snow()
