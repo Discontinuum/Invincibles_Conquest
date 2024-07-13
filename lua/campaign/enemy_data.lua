@@ -263,14 +263,14 @@ enemy_army.group = {
 		id = "drakes",
 		recruit = {"Drake Fighter","Drake Clasher","Drake Glider","Drake Burner","Saurian Augur"},
 		recall = {
-			level2 = {"Drake Arbiter","Drake Thrasher","Drake Warrior","Fire Drake","Drake Flare","Saurian Oracle","Saurian Soothsayer","Saurian Ambusher","Drake Warrior","Drake Thrasher","Sky Drake", "Fire Wraith"},
-			level3 = {"Drake Flameheart","Inferno Drake","Drake Blademaster","Drake Blademaster","Drake Enforcer","Drake Warden","Saurian Flanker","Saurian Flanker","Hurricane Drake","Saurian Visionnaire LotI","Saurian Witchdoctor LotI", "Ice Spirit"},
+			level2 = {"Drake Arbiter","Drake Thrasher","Drake Warrior","Fire Drake","Drake Flare","Saurian Oracle","Saurian Soothsayer","Saurian Ambusher","Drake Warrior","Drake Thrasher","Sky Drake", "Fire Wraith","Saurian Spearthrower"},
+			level3 = {"Drake Flameheart","Inferno Drake","Drake Blademaster","Drake Blademaster","Drake Enforcer","Drake Warden","Saurian Flanker","Saurian Flanker","Hurricane Drake", "Ice Spirit","Saurian Seer","Saurian Prophet","Saurian Javelineer"},
 			level4 = {"Armageddon Drake LotI","Saurian Spearmaster LotI","Maelstrom Drake LotI","Drake Kensai LotI", "Ice Wraith", "Drake Keeper LotI", "Drake Firestorm LotI", "Drake Conqueror LotI"}
 		},
 		commander = {
 			level1 = {"Drake Burner","Drake Fighter","Drake Clasher","Saurian Augur","Saurian Skirmisher"},
-			level2 = {"Drake Arbiter","Drake Thrasher","Drake Warrior","Fire Drake","Drake Flare","Saurian Ambusher","Saurian Oracle"},
-			level3 = {"Drake Flameheart","Inferno Drake","Drake Blademaster","Drake Enforcer","Drake Warden","Saurian Flanker","Saurian Visionnaire LotI","Saurian Witchdoctor LotI"},
+			level2 = {"Drake Arbiter","Drake Thrasher","Drake Warrior","Fire Drake","Drake Flare","Saurian Ambusher","Saurian Oracle","Saurian Spearthrower"},
+			level3 = {"Drake Flameheart","Inferno Drake","Drake Blademaster","Drake Enforcer","Drake Warden","Saurian Flanker","Saurian Visionnaire LotI","Saurian Witchdoctor LotI","Saurian Seer","Saurian Prophet","Saurian Javelineer"},
 		},
 		leader = {
 			{
@@ -312,13 +312,13 @@ enemy_army.group = {
 			},
 			{
 				level2 = "Saurian Soothsayer",
-				level3 = "Saurian Witchdoctor LotI",
+				level3 = "Saurian Seer",
 				level4 = "Maelstrom Drake LotI",
 				recruit = {"Saurian Skirmisher","Saurian Augur","Drake Glider","Drake Fighter"},
 			},
 			{
 				level2 = "Saurian Oracle",
-				level3 = "Saurian Visionnaire LotI",
+				level3 = "Saurian Prophet",
 				recruit = {"Saurian Skirmisher","Saurian Augur","Drake Burner","Drake Fighter"},
 			},
 		}
@@ -327,13 +327,13 @@ enemy_army.group = {
 		id = "undead",
 		recruit = {"Skeleton","Skeleton Archer","Ghost","Ghoul","Dark Adept"},
 		recall = {
-			level2 = {"Revenant","Deathblade","Bone Shooter","Dark Sorcerer","Necrophage","Wraith","Shadow","Revenant","Bone Shooter","Dark Sorcerer","Necrophage","Chocobone", "Monstrosity"},
+			level2 = {"Revenant","Deathblade","Bone Shooter","Dark Sorcerer","Necrophage","Wraith","Shadow","Revenant","Bone Shooter","Dark Sorcerer","Necrophage","Chocobone", "Monstrosity", "Death Squire", "Bone Knight"},
 			level3 = {"Draug","Death Knight","Necromancer","Lich","Ghast","Banebow","Spectre","Nightgaunt","Draug","Ghast","Banebow", "Zombie Rider", "Phantom", "Grim Knight"},
 			level4 = {"Deathlord","Infernal Knight","Soul Shooter","09 Ancient Lich","Abomination","Demilich", "Lich King", "Dark Shade", "Reaper", "Skeletal Dragon LotI"},
 		},
 		commander = {
-			level1 = {"Dark Adept","Skeleton Archer","Skeleton","Ghoul", "Mist"},
-			level2 = {"Revenant","Deathblade","Bone Shooter","Dark Sorcerer","Necrophage", "Monstrosity", "Will_o_Wisp"},
+			level1 = {"Dark Adept","Skeleton Archer","Skeleton","Ghoul", "Mist", "Skeleton Rider"},
+			level2 = {"Revenant","Deathblade","Bone Shooter","Dark Sorcerer","Necrophage", "Monstrosity", "Will_o_Wisp", "Death Squire", "Bone Knight"},
 			level3 = {"Draug","Death Knight","Necromancer","Lich","Ghast","Banebow", "Phantom"},
 		},
 		leader = {
@@ -351,6 +351,12 @@ enemy_army.group = {
 			},
 			{
 				level2 = "Deathblade",
+				level3 = "Grim Knight",
+				level4 = "Lich King",
+				recruit = {"Skeleton","Skeleton Archer","Skeleton Rider","Ghoul"},
+			},
+			{
+				level2 = "Death Squire",
 				level3 = "Death Knight",
 				level4 = "Infernal Knight",
 				level5 = "Argan_lich",
@@ -386,8 +392,8 @@ enemy_army.group = {
 		},
 		commander = {
 			level1 = {"Dune Soldier","Dune Soldier","Dune Burner","Dune Skirmisher"},
-			level2 = {"Dune Captain","Dune Spearguard","Dune Strider","Dune Scorcher","Dune Alchemist","Dune Apothecary","Dune Swordsman", "Jinn"},
-			level3 = {"Dune Blademaster","Dune Luminary","Dune Firetrooper","Dune Warmaster","Dune Spearmaster"},
+			level2 = {"Dune Captain","Dune Spearguard","Dune Strider","Dune Scorcher","Dune Alchemist","Dune Apothecary","Dune Swordsman", "Jinn", "Naga Ophidian","Naga Ringcaster"},
+			level3 = {"Dune Blademaster","Dune Luminary","Dune Firetrooper","Dune Warmaster","Dune Spearmaster", "Naga Sicarius","Naga Zephyr"},
 		},
 		leader = {
 			{
