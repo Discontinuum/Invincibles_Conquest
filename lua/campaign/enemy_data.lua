@@ -147,7 +147,7 @@ enemy_army.group = {
 		recall = {
 			level2 = {"Elder Wose","Elvish Sorceress","Elvish Druid","Elvish Marksman","Elvish Ranger","Elvish Hero","Elvish Captain","Elvish Rider","Elder Wose","Elvish Hero","Elder Wose","Elvish Sorceress","Red Mage","Elvish Marksman","Elvish Ranger","Elvish Hero","Elvish Captain","Elvish Rider","Elvish Ranger","Elvish Hero", "Wose Shaman"},
 			level3 = {"Elvish Marshal","Elvish Champion","Elvish Avenger","Elvish Sharpshooter","Elvish Shyde","Elvish Enchantress","Ancient Wose","Elvish Outrider","Ancient Wose","Elvish Champion","Elvish Marshal","Elvish Champion","Elvish Avenger","Elvish Sharpshooter","Arch Mage","Elvish Enchantress","Ancient Wose","Elvish Outrider","Elvish Avenger","Elvish Champion"},
-			level4 = {"Elvish Warlord","Elvish Juggernaut","Elvish Juggernaut","Elvish Nightprowler","Elvish Assassin","Faerie Incarnation","Elvish Sylph","Arch Wose LotI","Elvish Gryphon Rider", "Elvish Gryphon Rider"},
+			level4 = {"Elvish Warlord","Elvish Juggernaut","Elvish Juggernaut","Elvish Nightprowler","Elvish Assassin","Faerie Incarnation","Elvish Sylph LotI","Arch Wose LotI","Elvish Gryphon Rider", "Elvish Gryphon Rider"},
 		},
 		commander = {
 			level1 = {"Elvish Shaman","Elvish Fighter","Elvish Archer","Wose"},
@@ -188,8 +188,7 @@ enemy_army.group = {
 			{
 				level2 = "Elvish Sorceress",
 				level3 = "Elvish Enchantress",
-				level4 = "Elvish Sylph",
-				level5 = "Elvish Seer",
+				level4 = "Elvish Sylph LotI",
 				recruit = {"Elvish Fighter","Elvish Archer","Elvish Shaman","Elvish Scout","Mage"},
 			},
 			{
@@ -265,12 +264,12 @@ enemy_army.group = {
 		recall = {
 			level2 = {"Drake Arbiter","Drake Thrasher","Drake Warrior","Fire Drake","Drake Flare","Saurian Oracle","Saurian Soothsayer","Saurian Ambusher","Drake Warrior","Drake Thrasher","Sky Drake", "Fire Wraith","Saurian Spearthrower"},
 			level3 = {"Drake Flameheart","Inferno Drake","Drake Blademaster","Drake Blademaster","Drake Enforcer","Drake Warden","Saurian Flanker","Saurian Flanker","Hurricane Drake", "Ice Spirit","Saurian Seer","Saurian Prophet","Saurian Javelineer"},
-			level4 = {"Armageddon Drake LotI","Saurian Spearmaster LotI","Maelstrom Drake LotI","Drake Kensai LotI", "Ice Wraith", "Drake Keeper LotI", "Drake Firestorm LotI", "Drake Conqueror LotI"}
+			level4 = {"Armageddon Drake LotI","Saurian Spearmaster LotI","Maelstrom Drake LotI","Drake Kensai LotI", "Ice Wraith", "Drake Keeper LotI", "Drake Firestorm LotI", "Drake Conqueror LotI", "Saurian Javelinmaster LotI", "Saurian Visionnaire LotI", "Saurian Witchdoctor LotI"}
 		},
 		commander = {
 			level1 = {"Drake Burner","Drake Fighter","Drake Clasher","Saurian Augur","Saurian Skirmisher"},
 			level2 = {"Drake Arbiter","Drake Thrasher","Drake Warrior","Fire Drake","Drake Flare","Saurian Ambusher","Saurian Oracle","Saurian Spearthrower"},
-			level3 = {"Drake Flameheart","Inferno Drake","Drake Blademaster","Drake Enforcer","Drake Warden","Saurian Flanker","Saurian Visionnaire LotI","Saurian Witchdoctor LotI","Saurian Seer","Saurian Prophet","Saurian Javelineer"},
+			level3 = {"Drake Flameheart","Inferno Drake","Drake Blademaster","Drake Enforcer","Drake Warden","Saurian Flanker","Saurian Seer","Saurian Prophet","Saurian Javelineer"},
 		},
 		leader = {
 			{
@@ -313,12 +312,13 @@ enemy_army.group = {
 			{
 				level2 = "Saurian Soothsayer",
 				level3 = "Saurian Seer",
-				level4 = "Maelstrom Drake LotI",
+				level4 = "Saurian Witchdoctor LotI",
 				recruit = {"Saurian Skirmisher","Saurian Augur","Drake Glider","Drake Fighter"},
 			},
 			{
 				level2 = "Saurian Oracle",
 				level3 = "Saurian Prophet",
+				level4 = "Saurian Visionnaire LotI",
 				recruit = {"Saurian Skirmisher","Saurian Augur","Drake Burner","Drake Fighter"},
 			},
 		}
