@@ -3,6 +3,10 @@ local on_event = wesnoth.require("on_event")
 ----- the 'full movement on turn recuited' ability implementation -----
 -- priority -1 because this event must be happen after the training event.
 on_event("recruit,recall", -1, function(ec)
+--- TODO: investigate why it triggers on GSE triumvirate units
+	if not ec.x1 or not ec.y1 then
+		return
+	end 
 	local unit = wesnoth.units.get(ec.x1, ec.y1)
 	if not unit then
 		return
