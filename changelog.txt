@@ -1,3 +1,11 @@
+Version 1.2.0 (24 Aug 2024):
+Works on 1.18 with new LotI
+Saurian Spearthrower line enabled and has a 4lvl stub advance
+New 3 lvl augurs incorporated with stub 4 lvl advances
+Some fixes from mainline WC
+Ported (not tested) fix for experience of epic heroes from mainline WC
+A lot more Era of Magic units now can carry weapons
+
 Version 1.1.1 (26 Feb 2023):
 Works with new LotI
 Refactors for easier inclusion in other addons
