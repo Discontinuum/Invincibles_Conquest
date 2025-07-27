@@ -12,7 +12,7 @@ settings = globals.settings or {}
 
 local n_villages = {27, 40, 53, 63}
 
-local function get_map_generator(scenario_data)
+local function get_map_generator(scenario_settings)
 	if globals.settings.default_id then
 		-- overwrite the random result, with a preset one (used by the editor)
 		return wct_map_generator(
@@ -27,11 +27,11 @@ local function get_map_generator(scenario_data)
 			globals.settings.island
 		)
 	else
-		return scenario_data.generators[mathx.random(#scenario_data.generators)]
+		return scenario_settings.generators[mathx.random(#scenario_settings.generators)]
 	end
 end
 
-local function get_scenario_data(nplayers, scenario_num)
+local function get_scenario_settings(nplayers, scenario_num)
 	return wesnoth.dofile(string.format("./scenarios/WC_II_%dp_scenario%d.lua", nplayers, scenario_num))
 end
 
@@ -43,7 +43,7 @@ function wc_ii_generate_scenario(nplayers, gen_args)
 	--todo: does this work properly in the first scenario?
 	local enemy_stength = wml.variables["ic2_difficulty.enemy_power"] or 6
 	std_print("test_nplayers", wml.variables.test_nplayers)
-	local scenario_data = get_scenario_data(nplayers, scenario_num)
+	local scenario_settings = get_scenario_settings(nplayers, scenario_num)
 	
 	local prestart_event = { name = "prestart" }
 	-- our [scenario] skeleton
@@ -87,12 +87,12 @@ function wc_ii_generate_scenario(nplayers, gen_args)
 		next_scenario = gen_args.id,
 		description = "WC_II_" .. nplayers .. "p_desc",
 		modify_placing = false,
-		turns = scenario_data.turns,
+		turns = scenario_settings.turns,
 	}
 
 	-- add [side]s to the [scenario]
-	local enemy_data = scenario_data.get_enemy_data(enemy_stength)
-	wc_ii_generate_sides(scenario, prestart_event, nplayers, scenario_num, enemy_data, scenario_data)
+	local enemy_data = scenario_settings.get_enemy_data(enemy_stength)
+	wc_ii_generate_sides(scenario, prestart_event, nplayers, scenario_num, enemy_data, scenario_settings)
 
 	-- add plot (that is [event] with [message]s)
 	add_plot(scenario, scenario_num, nplayers)
@@ -125,7 +125,7 @@ function wc_ii_generate_scenario(nplayers, gen_args)
 	end
 
 	-- generate the map. (this also adds certain events for example to create [item]s or [sound_source]s)
-	local mapgen_func = get_map_generator(scenario_data)
+	local mapgen_func = get_map_generator(scenario_settings)
 	mapgen_func(scenario, nplayers)
 
 	-- set the correct scenario name.
@@ -136,7 +136,7 @@ function wc_ii_generate_scenario(nplayers, gen_args)
 		if scenario_num == 5 then
 			scenario_desc = _"Final Battle"
 		end
-		scenario.name = "LotI WC_II_" .. nplayers .. " " .. scenario_desc .. " - "--.. scenario.map_name
+		scenario.name = "LotI WC_II_" .. nplayers .. " " .. scenario_desc .. " - " .. scenario_data.map_name
 	end
 
 	local res = ic2_convert.lon_to_wml(scenario, "scenario")

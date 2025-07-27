@@ -59,7 +59,8 @@ local function run_postgeneration(map_data, id, scenario_content, nplayers, nhum
 	local map = _G.map.data
 	_G.map = nil
 	_G.prestart_event = nil
-	_G.scenario_data = nil
+	--- it holds the map name, so it shouldn't be nilled
+	---_G.scenario_data = nil
 	return map
 end
 
